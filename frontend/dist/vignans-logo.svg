@@ -1,0 +1,40 @@
+<svg width="757" height="215" viewBox="0 0 757 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield outline -->
+  <path d="M73 10 L10 30 L10 100 C10 140, 30 170, 73 190 C116 170, 136 140, 136 100 L136 30 Z" 
+        stroke="#6366F1" stroke-width="4" fill="none"/>
+  
+  <!-- Shield inner design - simplified geometric pattern -->
+  <g transform="translate(73, 100)">
+    <!-- Center circle -->
+    <circle cx="0" cy="0" r="25" fill="#6366F1"/>
+    <!-- Top line -->
+    <line x1="0" y1="-25" x2="0" y2="-60" stroke="#6366F1" stroke-width="6"/>
+    <!-- Right line -->
+    <line x1="22" y1="-12" x2="42" y2="-32" stroke="#6366F1" stroke-width="6"/>
+    <!-- Right bottom -->
+    <line x1="22" y1="12" x2="42" y2="32" stroke="#6366F1" stroke-width="6"/>
+    <!-- Left bottom -->
+    <line x1="-22" y1="12" x2="-42" y2="32" stroke="#6366F1" stroke-width="6"/>
+    <!-- Left line -->
+    <line x1="-22" y1="-12" x2="-42" y2="-32" stroke="#6366F1" stroke-width="6"/>
+  </g>
+  
+  <!-- Text: VIGNAN'S -->
+  <text x="160" y="80" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="#DC2626">
+    VIGNAN'S
+  </text>
+  
+  <!-- Text: FOUNDATION FOR SCIENCE, TECHNOLOGY & RESEARCH -->
+  <text x="160" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#000000">
+    FOUNDATION FOR SCIENCE, TECHNOLOGY &amp; RESEARCH
+  </text>
+  
+  <!-- Blue bar background -->
+  <rect x="10" y="165" width="737" height="40" fill="#0EA5E9" rx="4"/>
+  
+  <!-- Text on blue bar -->
+  <text x="380" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="600" 
+        fill="#FFFFFF" text-anchor="middle">
+    (Deemed to be University) - Estd. u/s 3 of UGC Act 1956
+  </text>
+</svg>

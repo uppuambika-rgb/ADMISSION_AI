@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: admissionai
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run.py
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false          # set manually in Render dashboard
+      - key: MONGODB_URL
+        sync: false          # set manually in Render dashboard
+      - key: MONGODB_DB
+        value: admission_counselling
+      - key: PYTHON_VERSION
+        value: "3.11.9"
