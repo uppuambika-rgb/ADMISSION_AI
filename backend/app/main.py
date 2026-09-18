@@ -1,3 +1,5 @@
+import os
+
 from fastapi import FastAPI, HTTPException, Header
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
@@ -16,15 +18,21 @@ app = FastAPI(
     description="AI Admission Counselling Agent with deterministic eligibility engine and conversational guidance."
 )
 
+frontend_origins = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
+configured_frontend_url = os.getenv("FRONTEND_URL", "")
+frontend_origins.extend(
+    origin.strip()
+    for origin in configured_frontend_url.split(",")
+    if origin.strip()
+)
+
 # CORS middleware for frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "https://student-admission-ai.onrender.com",
-        "https://admissionai-1.onrender.com",
-    ],
+    allow_origins=frontend_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

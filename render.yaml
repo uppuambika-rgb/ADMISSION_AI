@@ -12,5 +12,7 @@ services:
         sync: false          # set manually in Render dashboard
       - key: MONGODB_DB
         value: admission_counselling
+      - key: FRONTEND_URL
+        sync: false          # set to the deployed frontend URL in Render
       - key: PYTHON_VERSION
         value: "3.11.9"
